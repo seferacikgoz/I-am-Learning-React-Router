@@ -29,7 +29,7 @@ function App() {
 <Routes>
      <Route path="/" element={<Home/>}/>
      <Route path="/people" element={<People/>}/>
-     <Route path="/people/:name" element={<PersonDetail/>}/>
+     <Route path="/people/:id" element={<PersonDetail/>}/>
      <Route path="/paths" element={<Paths/>}/>
      <Route path="/contact" element={<Contact/>}/>
      <Route path="/*" element={<NotFound/>}/>
