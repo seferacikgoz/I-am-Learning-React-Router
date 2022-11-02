@@ -19,6 +19,8 @@ const PersonDetail =  () => {
   
   }, []);
 
+  console.log(person)
+
   return (
     <div className="container text-center">
       <h3>{person?.first_name}{person?.last_name}</h3>
