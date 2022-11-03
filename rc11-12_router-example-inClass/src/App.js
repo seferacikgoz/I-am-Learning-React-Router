@@ -32,7 +32,8 @@ function App() {
      <Route path="/people/:id" element={<PersonDetail/>}/>
      <Route path="/paths" element={<Paths/>}/>
      <Route path="/contact" element={<Contact/>}/>
-     <Route path="/*" element={<NotFound/>}/>
+     {/* <Route path="/*" element={<NotFound/>}/> */}
+     <Route path="*" element={<Navigate to="/"/>}/> 
 </Routes>
       <Footer />
     </>
