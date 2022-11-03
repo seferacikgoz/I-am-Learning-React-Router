@@ -15,14 +15,12 @@ const Paths = () => {
         experts!
       </p>
       <div>
-        <Link className="btn btn-success w-50" to="">
-          {/* <Link className="btn btn-success w-50" to="fullstack"> */}
+      <button
+          className="btn btn-success w-50">
           Fullstack
-        </Link>
+        </button>     
         <button
-          className="btn btn-warning w-50"
-          onClick={() => navigate("aws")}
-        >
+          className="btn btn-warning w-50">
           Aws-Devops
         </button>
       </div>
