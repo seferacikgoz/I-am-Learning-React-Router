@@ -12,6 +12,7 @@ const PersonDetail =  () => {
 
   const [person, setPerson] = useState("");
   const [error, setError] = useState(false)
+  // const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     fetch(`https://reqres.in/api/users/${id}`)
@@ -31,6 +32,13 @@ const PersonDetail =  () => {
 
   if (error){
     return <NotFound/>
+  }else if (!person){
+      return(
+        <div>
+          Data Loading
+        </div>
+      )
+    
   }
   else{
     return (
