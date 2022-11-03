@@ -21,12 +21,12 @@ const Paths = () => {
           >
           Fullstack
         </Link>     
-        <Link
+        <button
           className="btn btn-warning w-50"
-          to="aws"
+          onClick={() => navigate("aws")}
           >
           Aws-Devops
-        </Link>
+        </button>
       </div>
       <Outlet />
     </div>
