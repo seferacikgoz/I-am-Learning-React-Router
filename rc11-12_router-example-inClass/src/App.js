@@ -29,13 +29,13 @@ function App() {
     <>
       <Nav />
 <Routes>
-     <Route path="/" element={<Home/>}/>
+     <Route index element={<Home/>}/>
      <Route path="/people" element={<People/>}/>
      <Route path="/people/:id" element={<PersonDetail/>}/>
 
      
      <Route path="/paths" element={<Paths/>} >
-      <Route path="fullstack" element={<FullStack/>}/>
+      <Route index element={<FullStack/>}/>
       <Route path="aws" element={<Aws/>}/>    
 
      </Route>
