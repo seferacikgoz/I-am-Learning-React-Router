@@ -29,7 +29,11 @@ const People = () => {
               //! absolute path
              /*   onClick={() => navigate(`/people/${id}`, {state: person})}  */    
              
-             onClick={() => navigate( `/people/${id}`)}
+             //! Absolute path
+             /* onClick={() => navigate( `/people/${id}`)} */
+
+            //! Relative Path
+             onClick={() => navigate( `${id}`)}
             >
               <img className="rounded" src={avatar} alt="img" />
               <h6>
