@@ -43,7 +43,7 @@ function App() {
 
      <Route path="/contact" element={<Contact/>}/>
      {/* <Route path="/*" element={<NotFound/>}/> */}
-     <Route path="*" element={<Navigate to="/"/>}/> 
+     {/* <Route path="*" element={<Navigate to="/"/>}/> */} 
 </Routes>
       <Footer />
     </>
