@@ -9,6 +9,8 @@ import Paths from "./pages/Paths";
 import PersonDetail from "./pages/PersonDetail";
 import FullStack from "./pages/FullStack"
 import Aws from "./pages/Aws"
+import PrivateRouter from "./pages/PrivateRouter";
+import Login from "./pages/Login";
 
 //? Link, NavLink ve Navigate componentleri declerative routing
 //? gerceklestirmek icin kullanilir.
@@ -40,8 +42,12 @@ function App() {
 
      </Route>
 
+    <Route path="contact" element={<PrivateRouter/>}>
+    <Route path="" element={<Contact/>}/>
+    </Route>
+  
+    <Route path="login" element={<Login/>}/>
 
-     <Route path="/contact" element={<Contact/>}/>
      {/* <Route path="/*" element={<NotFound/>}/> */}
      {/* <Route path="*" element={<Navigate to="/"/>}/> */} 
 </Routes>
